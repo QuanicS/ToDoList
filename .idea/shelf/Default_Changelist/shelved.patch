@@ -1,0 +1,211 @@
+Index: app/.gitignore
+===================================================================
+diff --git a/app/.gitignore b/app/.gitignore
+deleted file mode 100644
+--- a/app/.gitignore	(revision c1f259062192c5b72ab7de46ab899ef37166768b)
++++ /dev/null	(revision c1f259062192c5b72ab7de46ab899ef37166768b)
+@@ -1,1 +0,0 @@
+-/build
+Index: .gitignore
+===================================================================
+diff --git a/.gitignore b/.gitignore
+deleted file mode 100644
+--- a/.gitignore	(revision c1f259062192c5b72ab7de46ab899ef37166768b)
++++ /dev/null	(revision c1f259062192c5b72ab7de46ab899ef37166768b)
+@@ -1,14 +0,0 @@
+-*.iml
+-.gradle
+-/local.properties
+-/.idea/caches
+-/.idea/libraries
+-/.idea/modules.xml
+-/.idea/workspace.xml
+-/.idea/navEditor.xml
+-/.idea/assetWizardSettings.xml
+-.DS_Store
+-/build
+-/captures
+-.externalNativeBuild
+-.cxx
+Index: app/proguard-rules.pro
+===================================================================
+diff --git a/app/proguard-rules.pro b/app/proguard-rules.pro
+deleted file mode 100644
+--- a/app/proguard-rules.pro	(revision c1f259062192c5b72ab7de46ab899ef37166768b)
++++ /dev/null	(revision c1f259062192c5b72ab7de46ab899ef37166768b)
+@@ -1,21 +0,0 @@
+-# Add project specific ProGuard rules here.
+-# You can control the set of applied configuration files using the
+-# proguardFiles setting in build.gradle.
+-#
+-# For more details, see
+-#   http://developer.android.com/guide/developing/tools/proguard.html
+-
+-# If your project uses WebView with JS, uncomment the following
+-# and specify the fully qualified class name to the JavaScript interface
+-# class:
+-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+-#   public *;
+-#}
+-
+-# Uncomment this to preserve the line number information for
+-# debugging stack traces.
+-#-keepattributes SourceFile,LineNumberTable
+-
+-# If you keep the line number information, uncomment this to
+-# hide the original source file name.
+-#-renamesourcefileattribute SourceFile
+Index: README.md
+===================================================================
+diff --git a/README.md b/README.md
+deleted file mode 100644
+--- a/README.md	(revision c1f259062192c5b72ab7de46ab899ef37166768b)
++++ /dev/null	(revision c1f259062192c5b72ab7de46ab899ef37166768b)
+@@ -1,15 +0,0 @@
+-# Todo-List
+-An app to add your todo. 
+-
+-You can add your todo list into the app set the time for it you will get reminder on the exact time. You can check the list as well as complete mark the list as complete once a task is been completed, delete the task if it is no required, edit it to make changes in the date, time, title etc. 
+-
+-An other option is the calendar and you can have an overview of all the task in a concise view.
+-
+-
+-Tech Stack
+-- Androidx
+-- Calligraphy for fonts
+-- Butterknife for binding the ids
+-- Room database
+-- Glide
+-- Calendar View
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"PLATFORM\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleJvm\" value=\"1.8\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\r\n        <option name=\"useQualifiedModuleNames\" value=\"true\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision c1f259062192c5b72ab7de46ab899ef37166768b)
++++ b/.idea/gradle.xml	(date 1649686386931)
+@@ -1,9 +1,10 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
+-        <option name="testRunner" value="PLATFORM" />
++        <option name="testRunner" value="GRADLE" />
+         <option name="distributionType" value="DEFAULT_WRAPPED" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+         <option name="gradleJvm" value="1.8" />
+@@ -14,7 +15,6 @@
+           </set>
+         </option>
+         <option name="resolveModulePerSourceSet" value="false" />
+-        <option name="useQualifiedModuleNames" value="true" />
+       </GradleProjectSettings>
+     </option>
+   </component>
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_1_8\" default=\"false\" project-jdk-name=\"1.8\" project-jdk-type=\"JavaSDK\" />\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision c1f259062192c5b72ab7de46ab899ef37166768b)
++++ b/.idea/misc.xml	(date 1649686812609)
+@@ -1,4 +1,13 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
++  <component name="DesignSurface">
++    <option name="filePathToZoomLevelMap">
++      <map>
++        <entry key="..\:/Users/voros/AndroidStudioProjects/todo/app/src/main/res/layout/activity_main.xml" value="0.2537037037037037" />
++        <entry key="..\:/Users/voros/AndroidStudioProjects/todo/app/src/main/res/layout/fragment_create_task.xml" value="0.30052083333333335" />
++        <entry key="..\:/Users/voros/AndroidStudioProjects/todo/app/src/main/res/layout/item_task.xml" value="0.30052083333333335" />
++      </map>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+ </project>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:paddingRight=\"20dp\"\r\n    android:orientation=\"vertical\"\r\n    android:background=\"@color/colorPrimary\"\r\n    android:paddingLeft=\"20dp\"\r\n    tools:context=\".activity.MainActivity\">\r\n\r\n    <FrameLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\">\r\n\r\n        <LinearLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:orientation=\"vertical\">\r\n\r\n   <TextView\r\n       android:layout_width=\"wrap_content\"\r\n       android:layout_height=\"wrap_content\"\r\n       android:text=\"Hello\"\r\n       android:layout_marginTop=\"20dp\"\r\n       android:textColor=\"@color/colorAccent\"\r\n       android:textSize=\"18sp\"/>\r\n\r\n   <TextView\r\n       android:layout_width=\"wrap_content\"\r\n       android:layout_height=\"wrap_content\"\r\n       android:text=\"All tasks\"\r\n       fontPath=\"fonts/nunito_extra_bold.ttf\"\r\n       android:textStyle=\"bold\"\r\n       android:textColor=\"@color/colorAccent\"\r\n       android:textSize=\"28sp\"\r\n       tools:ignore=\"MissingPrefix\" />\r\n\r\n        </LinearLayout>\r\n\r\n        <ImageView\r\n            android:layout_width=\"30dp\"\r\n            android:layout_height=\"30dp\"\r\n            android:layout_gravity=\"right|center\"\r\n            android:background=\"@drawable/calendar\"\r\n            android:id=\"@+id/calendar\"/>\r\n\r\n    </FrameLayout>\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"match_parent\"\r\n        android:layout_marginTop=\"20dp\"\r\n        android:orientation=\"vertical\">\r\n\r\n        <FrameLayout\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"match_parent\"\r\n            android:layout_weight=\"1\">\r\n\r\n            <ImageView\r\n                android:layout_width=\"300dp\"\r\n                android:layout_height=\"300dp\"\r\n                android:id=\"@+id/noDataImage\"\r\n                android:layout_gravity=\"center\"/>\r\n\r\n    <androidx.recyclerview.widget.RecyclerView\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"match_parent\"\r\n        android:id=\"@+id/taskRecycler\"/>\r\n\r\n        </FrameLayout>\r\n\r\n   <TextView\r\n       android:layout_width=\"wrap_content\"\r\n       android:layout_height=\"70dp\"\r\n       android:text=\"Add Task\"\r\n       android:drawablePadding=\"10dp\"\r\n       android:paddingTop=\"10dp\"\r\n       android:id=\"@+id/addTask\"\r\n       android:layout_gravity=\"center\"\r\n       android:textColor=\"@color/colorAccent\"\r\n       android:textSize=\"20sp\"\r\n       android:drawableLeft=\"@drawable/ic_add_black_24dp\"\r\n       android:textAlignment=\"center\"\r\n       android:layout_weight=\"0.5\"\r\n       android:layout_marginBottom=\"20dp\"/>\r\n\r\n    </LinearLayout>\r\n\r\n</LinearLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_main.xml b/app/src/main/res/layout/activity_main.xml
+--- a/app/src/main/res/layout/activity_main.xml	(revision c1f259062192c5b72ab7de46ab899ef37166768b)
++++ b/app/src/main/res/layout/activity_main.xml	(date 1649686721491)
+@@ -22,7 +22,7 @@
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+-       android:text="Hello"
++       android:text="Приветсвую!"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"/>
+@@ -30,7 +30,7 @@
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+-       android:text="All tasks"
++       android:text="Все задачи"
+        fontPath="fonts/nunito_extra_bold.ttf"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+@@ -59,12 +59,6 @@
+             android:layout_height="match_parent"
+             android:layout_weight="1">
+ 
+-            <ImageView
+-                android:layout_width="300dp"
+-                android:layout_height="300dp"
+-                android:id="@+id/noDataImage"
+-                android:layout_gravity="center"/>
+-
+     <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+Index: app/src/main/java/com/codegama/todolistapplication/activity/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.codegama.todolistapplication.activity;\r\n\r\nimport android.content.ComponentName;\r\nimport android.content.pm.PackageManager;\r\nimport android.os.AsyncTask;\r\nimport android.os.Bundle;\r\nimport android.view.View;\r\nimport android.view.WindowManager;\r\nimport android.widget.ImageView;\r\nimport android.widget.LinearLayout;\r\nimport android.widget.TextView;\r\n\r\nimport androidx.recyclerview.widget.LinearLayoutManager;\r\nimport androidx.recyclerview.widget.RecyclerView;\r\n\r\nimport com.bumptech.glide.Glide;\r\nimport com.codegama.todolistapplication.R;\r\nimport com.codegama.todolistapplication.adapter.TaskAdapter;\r\nimport com.codegama.todolistapplication.bottomSheetFragment.CreateTaskBottomSheetFragment;\r\nimport com.codegama.todolistapplication.bottomSheetFragment.ShowCalendarViewBottomSheet;\r\nimport com.codegama.todolistapplication.broadcastReceiver.AlarmBroadcastReceiver;\r\nimport com.codegama.todolistapplication.database.DatabaseClient;\r\nimport com.codegama.todolistapplication.model.Task;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\n\r\nimport butterknife.BindView;\r\nimport butterknife.ButterKnife;\r\n\r\npublic class MainActivity extends BaseActivity implements CreateTaskBottomSheetFragment.setRefreshListener {\r\n\r\n    @BindView(R.id.taskRecycler)\r\n    RecyclerView taskRecycler;\r\n    @BindView(R.id.addTask)\r\n    TextView addTask;\r\n    TaskAdapter taskAdapter;\r\n    List<Task> tasks = new ArrayList<>();\r\n    @BindView(R.id.noDataImage)\r\n    ImageView noDataImage;\r\n    @BindView(R.id.calendar)\r\n    ImageView calendar;\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_main);\r\n        ButterKnife.bind(this);\r\n        setUpAdapter();\r\n        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);\r\n        ComponentName receiver = new ComponentName(this, AlarmBroadcastReceiver.class);\r\n        PackageManager pm = getPackageManager();\r\n        pm.setComponentEnabledSetting(receiver, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);\r\n        Glide.with(getApplicationContext()).load(R.drawable.first_note).into(noDataImage);\r\n\r\n        addTask.setOnClickListener(view -> {\r\n            CreateTaskBottomSheetFragment createTaskBottomSheetFragment = new CreateTaskBottomSheetFragment();\r\n            createTaskBottomSheetFragment.setTaskId(0, false, this, MainActivity.this);\r\n            createTaskBottomSheetFragment.show(getSupportFragmentManager(), createTaskBottomSheetFragment.getTag());\r\n        });\r\n\r\n        getSavedTasks();\r\n\r\n        calendar.setOnClickListener(view -> {\r\n            ShowCalendarViewBottomSheet showCalendarViewBottomSheet = new ShowCalendarViewBottomSheet();\r\n            showCalendarViewBottomSheet.show(getSupportFragmentManager(), showCalendarViewBottomSheet.getTag());\r\n        });\r\n    }\r\n\r\n    public void setUpAdapter() {\r\n        taskAdapter = new TaskAdapter(this, tasks, this);\r\n        taskRecycler.setLayoutManager(new LinearLayoutManager(getApplicationContext()));\r\n        taskRecycler.setAdapter(taskAdapter);\r\n    }\r\n\r\n    private void getSavedTasks() {\r\n\r\n        class GetSavedTasks extends AsyncTask<Void, Void, List<Task>> {\r\n            @Override\r\n            protected List<Task> doInBackground(Void... voids) {\r\n                tasks = DatabaseClient\r\n                        .getInstance(getApplicationContext())\r\n                        .getAppDatabase()\r\n                        .dataBaseAction()\r\n                        .getAllTasksList();\r\n                return tasks;\r\n            }\r\n\r\n            @Override\r\n            protected void onPostExecute(List<Task> tasks) {\r\n                super.onPostExecute(tasks);\r\n                noDataImage.setVisibility(tasks.isEmpty() ? View.VISIBLE : View.GONE);\r\n                setUpAdapter();\r\n            }\r\n        }\r\n\r\n        GetSavedTasks savedTasks = new GetSavedTasks();\r\n        savedTasks.execute();\r\n    }\r\n\r\n    @Override\r\n    public void refresh() {\r\n        getSavedTasks();\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/codegama/todolistapplication/activity/MainActivity.java b/app/src/main/java/com/codegama/todolistapplication/activity/MainActivity.java
+--- a/app/src/main/java/com/codegama/todolistapplication/activity/MainActivity.java	(revision c1f259062192c5b72ab7de46ab899ef37166768b)
++++ b/app/src/main/java/com/codegama/todolistapplication/activity/MainActivity.java	(date 1649686632505)
+@@ -36,8 +36,6 @@
+     TextView addTask;
+     TaskAdapter taskAdapter;
+     List<Task> tasks = new ArrayList<>();
+-    @BindView(R.id.noDataImage)
+-    ImageView noDataImage;
+     @BindView(R.id.calendar)
+     ImageView calendar;
+ 
+@@ -51,7 +49,6 @@
+         ComponentName receiver = new ComponentName(this, AlarmBroadcastReceiver.class);
+         PackageManager pm = getPackageManager();
+         pm.setComponentEnabledSetting(receiver, PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+-        Glide.with(getApplicationContext()).load(R.drawable.first_note).into(noDataImage);
+ 
+         addTask.setOnClickListener(view -> {
+             CreateTaskBottomSheetFragment createTaskBottomSheetFragment = new CreateTaskBottomSheetFragment();
+@@ -89,7 +86,6 @@
+             @Override
+             protected void onPostExecute(List<Task> tasks) {
+                 super.onPostExecute(tasks);
+-                noDataImage.setVisibility(tasks.isEmpty() ? View.VISIBLE : View.GONE);
+                 setUpAdapter();
+             }
+         }
